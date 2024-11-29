@@ -359,7 +359,7 @@ class Image_Thumbnail_Toolz:
             filetypes=[("PNG files", "*.png"), ("JPEG files", "*.jpg"), ("All files", "*.*")]
         )
         if file_path:
-            self.merged_image.save(file_path)
+            self.merged_image_save(file_path)
         messagebox.showinfo("Image Saved", f"Merged image saved as {file_path}")
     def update_view(self):
         """Reload images based on the current recursive setting."""
